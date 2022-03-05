@@ -8,7 +8,7 @@ body {
 
 #tags {
   width: 87%;
-  margin: 6% auto auto auto;
+  margin: 1% auto auto auto;
   height: 210px;
 }
 
@@ -272,21 +272,25 @@ body {
 .dropdown {
   position: relative;
   display: inline-block;
+  cursor: pointer;
 }
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
+  background-color: #53565d;
+  width: 197%;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  border-radius: 23px;
+  margin-top: 5px;
+  letter-spacing: 1px;
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
-  color: black;
+  color: rgb(255, 255, 255);
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -298,19 +302,28 @@ body {
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-  background-color: #f1f1f1;
+  background-color: #b4b9c2;
+}
+.dropdown-content a:nth-child(1):hover {
+  background-color: #b4b9c2;
+  border-radius: 23px 23px 0px 0px;
+}
+.dropdown-content a:nth-child(3):hover {
+  background-color: #b4b9c2;
+  border-radius: 0px 0px 23px 23px;
 }
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
   z-index: 10;
-  position: relative;
+  position: absolute;
 }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-  background-color: #3e8e41;
+.dropdownFirstOption {
+  font-weight: 500;
+  color: #fff;
 }
 
 #allImagesBox > div:nth-child(1) {
@@ -321,6 +334,7 @@ body {
 #roundIcon {
   font-size: 2.8vw;
   margin: -7% 0 0 -5%;
+  cursor: pointer;
 }
 
 #roundIcon1 {
