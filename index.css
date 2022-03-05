@@ -4,6 +4,7 @@
 }
 body{
     margin: 0px;
+    /* background-color: black; */
 }
 
 #tags{
@@ -15,7 +16,7 @@ body{
 
 #funF{
     width: 100%;
-    font-size: 1.4vw ;
+    font-size: 1.5vw ;
     color: rgb(175,216,235);
     text-align: center;
     font-weight: 600;
@@ -262,6 +263,82 @@ body{
     
 }
 
+#allImagesBox{
+    width: 83%;
+    margin: 2% auto auto auto;
+    display: flex;
+    /* gap: 48%; */
+    color: rgb(187,191,196);
+    
+}
+
+.imgBoxText{
+font-size: 1.2vw ;
+    font-weight: 600;
+}
+
+#allImagesBox>div:nth-child(1){
+    display: flex;
+    width: 15%
+}
+
+#roundIcon{
+    font-size: 2.8vw;
+    margin: -7% 0 0 -5%;
+}
+
+
+#roundIcon1{
+    font-size: 2.8vw;
+    margin: -9% 0 0 -5%;
+}
+
+
+
+#allImagesBox>div:nth-child(2)>div:nth-child(1){
+    display: flex;
+/* width: 40%; */
+}
+
+#allImagesBox>div:nth-child(2){
+    display: flex;
+    gap: 10%;
+    margin-left: 65%;
+}
+
+#a{
+    margin-top: -1%;
+}
+#b{
+    margin-top: 1%;
+}
+
+#imagesBox{
+    margin: 1% auto auto auto;
+    width: 83%;
+    columns: 5;
+    column-gap: 1.2%;
+}
+
+#imagesBox >div{
+    width: 100%;
+    margin-bottom: 2%;
+    break-inside: avoid;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+/* 
+#imagesBox >div:hover{
+    opacity: .5;
+    cursor: pointer;
+} */
+
+#imagesBox > div > img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
 
 
 div{
