@@ -81,6 +81,7 @@ body{
 .textDiv{
     width: 100%;
     height: 45%;
+    margin-top: -2px;
     box-sizing: border-box;
     padding-top: 5%;
     border-radius: 0 0 4px 4px;
@@ -91,7 +92,7 @@ body{
     height: 75%;
     box-sizing: border-box;
     padding-top: 7%;
-    
+    margin-top: -2px;
     border-radius: 0 0 4px 4px;
 }
 
@@ -103,6 +104,7 @@ body{
 .textDiv6{
     width: 100%;
     height: 65%;
+    margin-top: -2px;
     box-sizing: border-box;
     padding-top: 5%;
     border-radius: 0 0 4px 4px;
@@ -242,6 +244,22 @@ body{
 }
 .bC10{
     background-color: rgb(170,129,184);
+}
+
+
+#oneBigBox:hover{
+    transform: translateY(-3px);
+    transition: all linear .2s;
+    cursor: pointer;
+    
+}
+
+
+#smallBoxes>div:hover{
+    transform: translateY(-3px);
+    transition: all linear .2s;
+    cursor: pointer;
+    
 }
 
 
