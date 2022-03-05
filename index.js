@@ -12,11 +12,11 @@ const loadImages = async () =>{
 
     showImage(data);
 }
-let data = JSON.parse(localStorage.getItem("ImageData"));
+// let data = JSON.parse(localStorage.getItem("ImageData"));
 
-showImage(data[0]);
+// showImage(data[0]);
 
-// loadImages()
+loadImages()
 
 function showImage(images){
     const container = document.getElementById("imagesBox");
@@ -92,3 +92,22 @@ function showImage(images){
     })
 
 }
+
+
+function showData(){
+    setTimeout(()=>{
+        pageNumber++;
+        loadImages();
+    },50)
+}
+
+
+window.addEventListener("scroll", ()=>{
+    const {scrollHeight, scrollTop, clientHeight} = document.documentElement;
+    // console.log(document.documentElement);
+    // console.log(scrollHeight, scrollTop, clientHeight);
+
+    if(scrollTop+clientHeight >= scrollHeight){
+        showData();
+    }
+})
