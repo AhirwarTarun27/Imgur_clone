@@ -103,10 +103,6 @@ window.addEventListener("scroll", () => {
   // console.log(document.documentElement);
   // console.log(scrollHeight, scrollTop, clientHeight);
 
-window.addEventListener("scroll", ()=>{
-    const {scrollHeight, scrollTop, clientHeight} = document.documentElement;
-    // console.log(document.documentElement);
-    // console.log(scrollHeight, scrollTop, clientHeight);
 
     if(scrollTop+clientHeight >= scrollHeight){
         showData();
@@ -118,9 +114,8 @@ window.addEventListener("scroll", ()=>{
 
 let resultBox = document.querySelector(".searchResultDiv")
 
-function setDebouncing(){
+const setDebouncing = ()=> {
     let inputVal  = document.getElementById("inpBox").value;
-
 
     // console.log(inputVal);
 
@@ -131,9 +126,11 @@ function setDebouncing(){
     if(inputVal == ""){
         resultBox.style.display = "none"
     }
+    if (scrollTop + clientHeight >= scrollHeight) {
+      showData();
+    }
     
 }
-  if (scrollTop + clientHeight >= scrollHeight) {
-    showData();
-  }
-});
+
+
+
