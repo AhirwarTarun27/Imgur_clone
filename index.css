@@ -507,6 +507,10 @@ body {
   cursor: pointer;
 }
 
+.newPostBtn:hover {
+  opacity: 0.7;
+}
+
 .newPostBtn p {
   margin-top: 8%;
   padding-left: 12px;
@@ -564,6 +568,9 @@ body {
   height: 37px;
   align-items: center;
   cursor: pointer;
+}
+.button:hover {
+  opacity: 0.7;
 }
 
 .violet {
