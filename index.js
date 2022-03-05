@@ -1,4 +1,14 @@
-
+//Fix Navbar
+const navBar = document.getElementById("navContainer");
+const navHeight = navBar.getBoundingClientRect().height;
+window.addEventListener("scroll", () => {
+  const scrollHeight = window.pageYOffset;
+  if (scrollHeight > navHeight) {
+    navBar.classList.add("fixNav");
+  } else {
+    navBar.classList.remove("fixNav");
+  }
+});
 
 var pageNumber = 1;
 
@@ -111,3 +121,24 @@ window.addEventListener("scroll", ()=>{
         showData();
     }
 })
+
+
+//////////Search engine/////////////////
+
+let resultBox = document.querySelector(".searchResultDiv")
+
+function setDebouncing(){
+    let inputVal  = document.getElementById("inpBox").value;
+
+
+    // console.log(inputVal);
+
+    if(inputVal !== " "){
+        resultBox.style.display = "block"
+    }
+
+    if(inputVal == ""){
+        resultBox.style.display = "none"
+    }
+    
+}
