@@ -13,13 +13,18 @@ window.addEventListener("scroll", () => {
 var pageNumber = 1;
 
 const loadImages = async () => {
+
+  let name = JSON.parse(localStorage.getItem("searchData"))
+
+  // console.log(name);
+
   let res = await fetch(
-    `https://api.unsplash.com/photos/?client_id=W9oXcS9uP1Llfv6F09YQqEmPoK60oUMsro9bSjuA5dM&per_page=15&page=${pageNumber}`
+    `https://api.unsplash.com/search/photos/?client_id=W9oXcS9uP1Llfv6F09YQqEmPoK60oUMsro9bSjuA5dM&query=${name}`
   );
 
   let data = await res.json();
-
-  showImage(data);
+    console.log(data);
+  showImage(data.results);
 };
 // let data = JSON.parse(localStorage.getItem("ImageData"));
 
@@ -137,7 +142,7 @@ const results = async ()=> {
 
     console.log(data);
    
-      console.log(res);
+      // console.log(res);
 
     appendSearchRes(data.organic_results, data.related_questions)
 
@@ -145,8 +150,6 @@ const results = async ()=> {
 
     function appendSearchRes(data, data1){
 
-
-      
       data.forEach((el)=>{
         // console.log(el.title);
 
@@ -170,8 +173,6 @@ const results = async ()=> {
 
       })
 
-
-      
        data1.forEach((el)=>{
         // console.log(el.title);
 
@@ -191,7 +192,6 @@ const results = async ()=> {
 
 
       })
-
 
 
     }
