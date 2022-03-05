@@ -41,6 +41,8 @@ function showImage(images){
             infoDiv.style.borderRadius = "0 0 5px 5px"
             infoDiv.style.margin= "-1.8% 0 0 0"
 
+                let headingDiv = document.createElement("div");
+                
             
             
 
