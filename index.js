@@ -37,17 +37,52 @@ function showImage(images){
             let infoDiv = document.createElement("div");
             infoDiv.style.backgroundColor = "#474a51"
             infoDiv.style.width = "100%"
-            infoDiv.style.height = "50px"
+            infoDiv.style.height = "60px"
             infoDiv.style.borderRadius = "0 0 5px 5px"
             infoDiv.style.margin= "-1.8% 0 0 0"
 
                 let headingDiv = document.createElement("div");
-                
-            
-            
+                headingDiv.innerText = image.user.name;
+                headingDiv.style.fontSize = ".9vw"
+                headingDiv.style.color = "white";
+                headingDiv.style.padding = "4% 0 0 4%"
+                headingDiv.style.fontWeight = "600"
 
 
+                let votesDiv = document.createElement("div");
+                votesDiv.style.width = "90%"
+                // votesDiv.style.border = "1px solid white"
+                votesDiv.style.margin = "1% auto auto auto"
+                votesDiv.style.display = "flex";
+                votesDiv.style.justifyContent = "space-Between"
 
+                    let upVotesDiv = document.createElement("div");
+                    upVotesDiv.innerHTML = `<span class="material-icons-round">
+                        thumb_up
+                    </span>
+                    <div> ${Math.round(Math.random()*1000)} </div> `
+                    
+                   
+
+                    let commentsDiv = document.createElement("div");
+                    commentsDiv.innerHTML = `<span class="material-icons-round">
+                        <span class="material-icons-round">
+                        chat_bubble
+                        </span>
+                    </span>
+                    <div> ${Math.round(Math.random()*100)} </div> `
+
+                    let seenDiv = document.createElement("div");
+                    seenDiv.innerHTML = `<span class="material-icons-round">
+                        <span class="material-icons-round">
+                            visibility
+                        </span>
+                    </span>
+                    <div> ${Math.round(Math.random()*100)} </div> `
+
+                votesDiv.append(upVotesDiv, commentsDiv, seenDiv);
+
+            infoDiv.append(headingDiv, votesDiv)
 
 
         Div.append(Img, infoDiv)

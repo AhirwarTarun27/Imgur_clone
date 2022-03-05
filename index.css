@@ -24,7 +24,7 @@ body{
 
 #exploreDiv{
     display: flex;
-    font-size: 1.1vw;
+    font-size: 1vw;
     font-weight: 600;
     color: rgb(184,184,198);
     margin: 1% 0 0 0 ;
@@ -273,7 +273,7 @@ body{
 }
 
 .imgBoxText{
-font-size: 1.2vw ;
+font-size: 1.1vw ;
     font-weight: 600;
 }
 
@@ -314,7 +314,7 @@ font-size: 1.2vw ;
 }
 
 #imagesBox{
-    margin: 1% auto auto auto;
+    margin: 0% auto auto auto;
     width: 83%;
     columns: 5;
     column-gap: 1.2%;
@@ -329,16 +329,94 @@ font-size: 1.2vw ;
     0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
     0 100px 80px rgba(0, 0, 0, 0.12);
 }
-/* 
+
 #imagesBox >div:hover{
-    opacity: .5;
+    transform: scale(1.05);
     cursor: pointer;
-} */
+    transition: .2s linear all;
+}
 
 #imagesBox > div > img {
     width: 100%;
     border-radius: 5px 5px 0 0;
 }
+
+#imagesBox>div>div>div:nth-child(2)>div:nth-child(1){
+    transform: scale(.7);
+    
+    color: white;
+    opacity: .4;
+    display: flex;
+}
+
+#imagesBox>div>div>div:nth-child(2)>div:nth-child(1):hover{
+    color: #00e78e;
+    cursor: pointer;
+}
+
+
+#imagesBox>div>div>div:nth-child(2)>div:nth-child(2):hover{
+   opacity: 1;
+    cursor: pointer;
+}
+
+
+#imagesBox>div>div>div:nth-child(2)>div:nth-child(3):hover{
+   opacity: 1;
+    cursor: pointer;
+}
+
+
+
+#imagesBox>div>div>div:nth-child(2)>div:nth-child(1)>div{
+    
+    transform: translateY(-5%);
+    color: white;
+    margin: 12% 0 0 12%;
+}
+
+
+#imagesBox>div>div>div:nth-child(2)>div:nth-child(2){
+    transform: scale(.7);
+    
+    color: white;
+    opacity: .4;
+    display: flex;
+}
+
+
+#imagesBox>div>div>div:nth-child(2)>div:nth-child(2)>div{
+    
+    transform: translateY(-5%);
+    color: white;
+    margin: 12% 0 0 12%;
+}
+
+
+#imagesBox>div>div>div:nth-child(2)>div:nth-child(3){
+    transform: scale(.7);
+    
+    color: white;
+    opacity: .4;
+    display: flex;
+}
+
+
+#imagesBox>div>div>div:nth-child(2)>div:nth-child(3)>div{
+    
+    transform: translateY(-5%);
+    color: white;
+    margin: 12% 0 0 12%;
+}
+
+
+
+
+
+
+
+
+
 
 
 div{
