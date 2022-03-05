@@ -1,126 +1,115 @@
-*{
-    font-family:  Helvetica;
-    
+* {
+  font-family: Helvetica;
 }
-body{
-    margin: 0px;
-    /* background-color: black; */
-}
-
-#tags{
-
-    width: 87%;
-    margin:1% auto auto auto;
-    height: 210px;
+body {
+  margin: 0px;
+  /* background-color: black; */
 }
 
-#funF{
-    width: 100%;
-    font-size: 1.5vw ;
-    color: rgb(175,216,235);
-    text-align: center;
-    font-weight: 600;
+#tags {
+  width: 87%;
+  margin: 1% auto auto auto;
+  height: 210px;
 }
 
-#exploreDiv{
-    display: flex;
-    font-size: 1vw;
-    font-weight: 600;
-    color: rgb(184,184,198);
-    margin: 1% 0 0 0 ;
-    gap: 81%;
+#funF {
+  width: 100%;
+  font-size: 1.5vw;
+  color: rgb(175, 216, 235);
+  text-align: center;
+  font-weight: 600;
 }
 
-#allBoxesDiv{
+#exploreDiv {
+  display: flex;
+  font-size: 1vw;
+  font-weight: 600;
+  color: rgb(184, 184, 198);
+  margin: 1% 0 0 0;
+  gap: 81%;
+}
 
-    width: 100%;
-    margin: 1% auto auto auto;
-    height: 65%;
-    display: grid;
-    grid-template-columns: 17% 82.7% ;
-    grid-gap: .8%;
+#allBoxesDiv {
+  width: 100%;
+  margin: 1% auto auto auto;
+  height: 65%;
+  display: grid;
+  grid-template-columns: 17% 82.7%;
+  grid-gap: 0.8%;
 }
 /* 
 #allBoxesDiv > div{
     border-radius: 10px;
 } */
 
-
-#smallBoxes{
-    display: grid;
-    grid-template-columns: repeat(9,10.2%);
-    grid-gap: .9%;
-    border-radius: 3px;
+#smallBoxes {
+  display: grid;
+  grid-template-columns: repeat(9, 10.2%);
+  grid-gap: 0.9%;
+  border-radius: 3px;
 }
 
-
-.imgDiv{
-    width: 100%;
-    height: 55%;
+.imgDiv {
+  width: 100%;
+  height: 55%;
 }
 
-.imgDiv5{
-    width: 100%;
-    height: 25%;
+.imgDiv5 {
+  width: 100%;
+  height: 25%;
 }
 
-
-.imgDiv6{
-    width: 100%;
-    height: 35%;
+.imgDiv6 {
+  width: 100%;
+  height: 35%;
 }
 
-
-
-.img{
-    width: 100%;
-    height: 100%;
-    border-radius: 4px 4px 0 0;
+.img {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px 4px 0 0;
 }
 
-
-.textDiv{
-    width: 100%;
-    height: 45%;
-    margin-top: -2px;
-    box-sizing: border-box;
-    padding-top: 5%;
-    border-radius: 0 0 4px 4px;
+.textDiv {
+  width: 100%;
+  height: 45%;
+  margin-top: -2px;
+  box-sizing: border-box;
+  padding-top: 5%;
+  border-radius: 0 0 4px 4px;
 }
 
-.textDiv5{
-    width: 100%;
-    height: 75%;
-    box-sizing: border-box;
-    padding-top: 7%;
-    margin-top: -2px;
-    border-radius: 0 0 4px 4px;
+.textDiv5 {
+  width: 100%;
+  height: 75%;
+  box-sizing: border-box;
+  padding-top: 7%;
+  margin-top: -2px;
+  border-radius: 0 0 4px 4px;
 }
 
-.textDiv5 >div:nth-child(1){
-    margin-bottom: 11%;
+.textDiv5 > div:nth-child(1) {
+  margin-bottom: 11%;
 }
 
-
-.textDiv6{
-    width: 100%;
-    height: 65%;
-    margin-top: -2px;
-    box-sizing: border-box;
-    padding-top: 5%;
-    border-radius: 0 0 4px 4px;
+.textDiv6 {
+  width: 100%;
+  height: 65%;
+  margin-top: -2px;
+  box-sizing: border-box;
+  padding-top: 5%;
+  border-radius: 0 0 4px 4px;
 }
 
-
-.textDiv6 >div:nth-child(1){
-    margin-bottom: 15%;
+.textDiv6 > div:nth-child(1) {
+  margin-bottom: 15%;
 }
 
-.headText{
-    font-size: .9vw;
-    font-weight: 600;
-    color: white;
-    text-align: center;
+.headText {
+  font-size: 0.9vw;
+  font-weight: 600;
+  color: white;
+  text-align: center;
 }
 
 .fetDiv{
@@ -134,213 +123,271 @@ body{
     position: relative;
 }
 
-#smallBoxes>div>div:nth-child(2)>div:nth-child(1){
-    margin-top: 6.5%;
+#smallBoxes > div > div:nth-child(2) > div:nth-child(1) {
+  margin-top: 6.5%;
 }
 
-.img1{
-    background-image: url("./images/img1.jpg");
-    
-    background-size: auto 115px;
-    background-repeat: repeat-x;
-    background-position: 100% 0;
-    border-radius: 4px 4px 0 0;
-    
+.img1 {
+  background-image: url("./images/img1.jpg");
+
+  background-size: auto 115px;
+  background-repeat: repeat-x;
+  background-position: 100% 0;
+  border-radius: 4px 4px 0 0;
 }
 
-.img2{
-    background-image: url("./images/img2.jpg");
-    background-size: auto 115px;
-    background-repeat: repeat-x;
-    background-position: 100% 0;
-    border-radius: 4px 4px 0 0;
+.img2 {
+  background-image: url("./images/img2.jpg");
+  background-size: auto 115px;
+  background-repeat: repeat-x;
+  background-position: 100% 0;
+  border-radius: 4px 4px 0 0;
 }
 
-.img3{
-     background-image: url("./images/img3.jpg");
-    background-size: auto 115px;
-    background-repeat: repeat-x;
-    background-position: 100% 0;
-    border-radius: 4px 4px 0 0;
+.img3 {
+  background-image: url("./images/img3.jpg");
+  background-size: auto 115px;
+  background-repeat: repeat-x;
+  background-position: 100% 0;
+  border-radius: 4px 4px 0 0;
 }
 
-.img4{
-     background-image: url("./images/img4.jpg");
-    background-size: auto 115px;
-    background-repeat: repeat-x;
-    background-position: 100% 0;
-    border-radius: 4px 4px 0 0;
+.img4 {
+  background-image: url("./images/img4.jpg");
+  background-size: auto 115px;
+  background-repeat: repeat-x;
+  background-position: 100% 0;
+  border-radius: 4px 4px 0 0;
 }
-.img5{
-     background-image: url("./images/img5.jpg");
-    background-size: auto 115px;
-    background-repeat: repeat-x;
-    background-position: 100% 0;
-    border-radius: 4px 4px 0 0;
+.img5 {
+  background-image: url("./images/img5.jpg");
+  background-size: auto 115px;
+  background-repeat: repeat-x;
+  background-position: 100% 0;
+  border-radius: 4px 4px 0 0;
 }
-.img6{
-     background-image: url("./images/img6.jpg");
-    background-size: auto 115px;
-    background-repeat: repeat-x;
-    background-position: 100% 0;
-    border-radius: 4px 4px 0 0;
+.img6 {
+  background-image: url("./images/img6.jpg");
+  background-size: auto 115px;
+  background-repeat: repeat-x;
+  background-position: 100% 0;
+  border-radius: 4px 4px 0 0;
 }
-.img7{
-     background-image: url("./images/img7.jpg");
-    background-size: auto 115px;
-    background-repeat: repeat-x;
-    background-position: 100% 0;
-    border-radius: 4px 4px 0 0;
+.img7 {
+  background-image: url("./images/img7.jpg");
+  background-size: auto 115px;
+  background-repeat: repeat-x;
+  background-position: 100% 0;
+  border-radius: 4px 4px 0 0;
 }
-.img8{
-     background-image: url("./images/img8.png");
-    background-size: auto 115px;
-    background-repeat: repeat-x;
-    background-position: 100% 0;
-    border-radius: 4px 4px 0 0;
+.img8 {
+  background-image: url("./images/img8.png");
+  background-size: auto 115px;
+  background-repeat: repeat-x;
+  background-position: 100% 0;
+  border-radius: 4px 4px 0 0;
 }
-.img9{
-     background-image: url("./images/img9.jpg");
-    background-size: auto 115px;
-    background-repeat: repeat-x;
-    background-position: 100% 0;
-    border-radius: 4px 4px 0 0;
+.img9 {
+  background-image: url("./images/img9.jpg");
+  background-size: auto 115px;
+  background-repeat: repeat-x;
+  background-position: 100% 0;
+  border-radius: 4px 4px 0 0;
 }
-.img10{
-     background-image: url("./images/img10.jpg");
-    background-size: auto 115px;
-    background-repeat: repeat-x;
-    background-position: 100% 0;
-    border-radius: 4px 4px 0 0;
-}
-
-.bC1{
-    background-color: rgb(38,97,111);
+.img10 {
+  background-image: url("./images/img10.jpg");
+  background-size: auto 115px;
+  background-repeat: repeat-x;
+  background-position: 100% 0;
+  border-radius: 4px 4px 0 0;
 }
 
-.bC2{
-    background-color: rgb(76,84,155);
+.bC1 {
+  background-color: rgb(38, 97, 111);
 }
 
-.bC3{
-    background-color: rgb(51,140,103);
-    
+.bC2 {
+  background-color: rgb(76, 84, 155);
 }
 
-.bC4{
-    background-color: rgb(197,101,121);
+.bC3 {
+  background-color: rgb(51, 140, 103);
 }
 
-.bC6{
-    background-color: rgb(228,125,87);
+.bC4 {
+  background-color: rgb(197, 101, 121);
 }
 
-.bC7{
-    background-color: rgb(18,44,49);
+.bC6 {
+  background-color: rgb(228, 125, 87);
 }
 
-.bC8{
-    background-color: rgb(42,27,90);
-}
-.bC9{
-    background-color: rgb(187,81,158);
-}
-.bC10{
-    background-color: rgb(170,129,184);
+.bC7 {
+  background-color: rgb(18, 44, 49);
 }
 
-
-#oneBigBox:hover{
-    transform: translateY(-3px);
-    transition: all linear .2s;
-    cursor: pointer;
-    
+.bC8 {
+  background-color: rgb(42, 27, 90);
+}
+.bC9 {
+  background-color: rgb(187, 81, 158);
+}
+.bC10 {
+  background-color: rgb(170, 129, 184);
 }
 
-
-#smallBoxes>div:hover{
-    transform: translateY(-3px);
-    transition: all linear .2s;
-    cursor: pointer;
-    
+#oneBigBox:hover {
+  transform: translateY(-3px);
+  transition: all linear 0.2s;
+  cursor: pointer;
 }
 
-#allImagesBox{
-    width: 83%;
-    margin: 2% auto auto auto;
-    display: flex;
-    /* gap: 48%; */
-    color: rgb(187,191,196);
-    
+#smallBoxes > div:hover {
+  transform: translateY(-3px);
+  transition: all linear 0.2s;
+  cursor: pointer;
 }
 
-.imgBoxText{
-font-size: 1.1vw ;
-    font-weight: 600;
+#allImagesBox {
+  width: 83%;
+  margin: 2% auto auto auto;
+  display: flex;
+  /* gap: 48%; */
+  color: rgb(187, 191, 196);
 }
 
-#allImagesBox>div:nth-child(1){
-    display: flex;
-    width: 15%
+.imgBoxText {
+  font-size: 1.2vw;
+  font-weight: 600;
 }
 
-#roundIcon{
-    font-size: 2.8vw;
-    margin: -7% 0 0 -5%;
+/* .dropbtn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    } */
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
 }
 
-
-#roundIcon1{
-    font-size: 2.8vw;
-    margin: -9% 0 0 -5%;
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #53565d;
+  width: 197%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 23px;
+  margin-top: 5px;
+  letter-spacing: 1px;
 }
 
-
-
-#allImagesBox>div:nth-child(2)>div:nth-child(1){
-    display: flex;
-/* width: 40%; */
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.imgBoxText {
+  font-size: 1.1vw;
+  font-weight: 600;
 }
 
-#allImagesBox>div:nth-child(2){
-    display: flex;
-    gap: 10%;
-    margin-left: 65%;
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #b4b9c2;
+}
+.dropdown-content a:nth-child(1):hover {
+  background-color: #b4b9c2;
+  border-radius: 23px 23px 0px 0px;
+}
+.dropdown-content a:nth-child(3):hover {
+  background-color: #b4b9c2;
+  border-radius: 0px 0px 23px 23px;
 }
 
-#a{
-    margin-top: -1%;
-}
-#b{
-    margin-top: 1%;
-}
-
-#imagesBox{
-    margin: 0% auto auto auto;
-    width: 83%;
-    columns: 5;
-    column-gap: 1.2%;
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+  z-index: 10;
+  position: absolute;
 }
 
-#imagesBox >div{
-    width: 100%;
-    margin-bottom: 2%;
-    break-inside: avoid;
-    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdownFirstOption {
+  font-weight: 500;
+  color: #fff;
+}
+
+#allImagesBox > div:nth-child(1) {
+  display: flex;
+  width: 15%;
+}
+
+#roundIcon {
+  font-size: 2.8vw;
+  margin: -7% 0 0 -5%;
+  cursor: pointer;
+}
+
+#roundIcon1 {
+  font-size: 2.8vw;
+  margin: -9% 0 0 -5%;
+}
+
+#allImagesBox > div:nth-child(2) > div:nth-child(1) {
+  display: flex;
+  /* width: 40%; */
+}
+
+#allImagesBox > div:nth-child(2) {
+  display: flex;
+  gap: 10%;
+  margin-left: 65%;
+}
+
+#a {
+  margin-top: -1%;
+}
+#b {
+  margin-top: 1%;
+}
+
+#imagesBox {
+  margin: 0% auto auto auto;
+  width: 83%;
+  columns: 5;
+  column-gap: 1.2%;
+}
+
+#imagesBox > div {
+  width: 100%;
+  margin-bottom: 2%;
+  break-inside: avoid;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
     0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
     0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
     0 100px 80px rgba(0, 0, 0, 0.12);
 }
 
-#imagesBox >div:hover{
-    transform: scale(1.05);
-    cursor: pointer;
-    transition: .2s linear all;
+#imagesBox > div:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  transition: 0.2s linear all;
 }
 
 #imagesBox > div > img {
-    width: 100%;
-    border-radius: 5px 5px 0 0;
+  width: 100%;
+  border-radius: 5px 5px 0 0;
 }
 
 
@@ -353,23 +400,17 @@ font-size: 1.1vw ;
     
 }
 
-#imagesBox>div>div>div:nth-child(2)>div:nth-child(1):hover{
-    color: #00e78e;
-    cursor: pointer;
-}
-
 
 #imagesBox>div>div>div:nth-child(2)>div:nth-child(2):hover{
    opacity: 1;
     cursor: pointer;
-
 }
 
-
-#imagesBox>div>div>div:nth-child(2)>div:nth-child(3):hover{
-   opacity: 1;
-    cursor: pointer;
+#imagesBox > div > div > div:nth-child(2) > div:nth-child(1):hover {
+  color: #00e78e;
+  cursor: pointer;
 }
+
 
 
 
@@ -389,9 +430,22 @@ font-size: 1.1vw ;
     color: white;
     opacity: .4;
     display: flex;
-    
 }
 
+#imagesBox > div > div > div:nth-child(2) > div:nth-child(3):hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+#imagesBox > div > div > div:nth-child(2) > div:nth-child(1) > div {
+  transform: translateY(-5%);
+  color: white;
+  margin: 12% 0 0 12%;
+}
+
+#imagesBox > div > div > div:nth-child(2) > div:nth-child(2) {
+  transform: scale(0.7);
+}
 
 #imagesBox>div>div>div:nth-child(2)>div:nth-child(2)>div{
     
@@ -409,28 +463,33 @@ font-size: 1.1vw ;
     opacity: .4;
     display: flex;
     
+  color: white;
+  opacity: 0.4;
+  display: flex;
 }
 
-
-#imagesBox>div>div>div:nth-child(2)>div:nth-child(3)>div{
-    
-    transform: translateY(-5%);
-    color: white;
-    margin: 12% 0 0 12%;
+#imagesBox > div > div > div:nth-child(2) > div:nth-child(2) > div {
+  transform: translateY(-5%);
+  color: white;
+  margin: 12% 0 0 12%;
 }
 
+#imagesBox > div > div > div:nth-child(2) > div:nth-child(3) {
+  transform: scale(0.7);
 
+  color: white;
+  opacity: 0.4;
+  display: flex;
+}
 
+#imagesBox > div > div > div:nth-child(2) > div:nth-child(3) > div {
+  transform: translateY(-5%);
+  color: white;
+  margin: 12% 0 0 12%;
+}
 
-
-
-
-
-
-
-
-div{
-    /* border: .2px solid black; */
+div {
+  /* border: .2px solid black; */
 }
 
 /* /////////////////////my work//////////////// */
@@ -448,7 +507,8 @@ body {
   padding: 0;
 }
 
-/* nav css */
+/*/////////////// nav css //////////////*/
+
 .backgroundImg {
   background: url("./images/bg.png") no-repeat;
   /* background-size: cover; */
@@ -466,12 +526,21 @@ body {
   background-size: cover;
 }
 
+#navContainer.fixNav {
+  position: fixed;
+  width: 98%;
+  top: 0;
+  box-shadow: 0 0 25px 5px #000;
+  z-index: 999;
+  background: url("./images/bg.png") no-repeat;
+  background-size: cover;
+}
+
 #navContainer {
   display: flex;
   /* border: 1px solid red; */
   padding: 17px;
   justify-content: space-between;
-  position: sticky;
 }
 
 #leftNav {
@@ -493,6 +562,10 @@ body {
   box-sizing: border-box;
   border-radius: 6px;
   cursor: pointer;
+}
+
+.newPostBtn:hover {
+  opacity: 0.7;
 }
 
 .newPostBtn p {
@@ -550,6 +623,10 @@ input:focus{
   color: #fff;
 }
 
+#rightNav svg:hover {
+  opacity: 0.2;
+}
+
 .titleAnchor {
   color: red;
 }
@@ -561,6 +638,9 @@ input:focus{
   height: 37px;
   align-items: center;
   cursor: pointer;
+}
+.button:hover {
+  opacity: 0.7;
 }
 
 .violet {
