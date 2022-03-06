@@ -104,7 +104,7 @@ window.addEventListener("scroll", () => {
   // console.log(document.documentElement);
   // console.log(scrollHeight, scrollTop, clientHeight);
 
-  if (scrollTop + clientHeight >= scrollHeight) {
+  if (scrollTop + clientHeight + 20 >= scrollHeight) {
     showData();
   }
 });
