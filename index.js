@@ -128,7 +128,7 @@ const results = async () => {
   }
 
   let res = await fetch(
-    `https://serpapi.com/search.json?engine=google&q=${inputVal}&google_domain=google.com&gl=us&hl=en&api_key=cf776ddfcf9a7a9349ed28f9dea094958a2e9eba85cdeaaddf03482d0a8697cf`
+    `https://serpapi.com/search.json?engine=google&q=${inputVal}&google_domain=google.com&gl=us&hl=en&api_key=bd06ca1cb7b7ecbac749df14a1a2e4a6fadb729a6013a8f7a64997cf764bfea5`
   );
 
   let data = await res.json();
