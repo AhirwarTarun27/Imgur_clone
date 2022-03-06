@@ -121,7 +121,7 @@ body {
     color: white;
     opacity: .5;
     margin-top: 3%;
-    z-index: -1;
+    /* z-index: -1; */
     position: relative;
 }
 
