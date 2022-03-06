@@ -13,8 +13,7 @@ window.addEventListener("scroll", () => {
 var pageNumber = 1;
 
 const loadImages = async () => {
-
-  let name = JSON.parse(localStorage.getItem("searchData"))
+  let name = JSON.parse(localStorage.getItem("searchData"));
 
   // console.log(name);
 
@@ -23,7 +22,7 @@ const loadImages = async () => {
   );
 
   let data = await res.json();
-    console.log(data);
+  console.log(data);
   showImage(data.results);
 };
 // let data = JSON.parse(localStorage.getItem("ImageData"));
@@ -108,127 +107,106 @@ window.addEventListener("scroll", () => {
   // console.log(document.documentElement);
   // console.log(scrollHeight, scrollTop, clientHeight);
 
-
-    if(scrollTop+clientHeight >= scrollHeight){
-        showData();
-    }
-})
-
+  if (scrollTop + clientHeight >= scrollHeight) {
+    showData();
+  }
+});
 
 //////////Search engine/////////////////
 
-let resultBox = document.querySelector(".searchResultDiv")
+let resultBox = document.querySelector(".searchResultDiv");
 var timerId;
 
-const results = async ()=> {
+const results = async () => {
   resultBox.innerHTML = null;
-    let inputVal  = document.getElementById("inpBox").value;
+  let inputVal = document.getElementById("inpBox").value;
 
-    // console.log(inputVal);
+  // console.log(inputVal);
 
-    if(inputVal !== " "){
-        resultBox.style.display = "block"
-    }
+  if (inputVal !== " ") {
+    resultBox.style.display = "block";
+  }
 
-    if(inputVal == ""){
-        resultBox.style.display = "none"
-    }
+  if (inputVal == "") {
+    resultBox.style.display = "none";
+  }
 
-    let res = await fetch(`https://serpapi.com/search.json?engine=google&q=${inputVal}&google_domain=google.com&gl=us&hl=en&api_key=cf776ddfcf9a7a9349ed28f9dea094958a2e9eba85cdeaaddf03482d0a8697cf`)
+  let res = await fetch(
+    `https://serpapi.com/search.json?engine=google&q=${inputVal}&google_domain=google.com&gl=us&hl=en&api_key=cf776ddfcf9a7a9349ed28f9dea094958a2e9eba85cdeaaddf03482d0a8697cf`
+  );
 
-    let data = await res.json();
+  let data = await res.json();
 
-    
+  console.log(data);
 
-    console.log(data);
-   
-      // console.log(res);
+  // console.log(res);
 
-    appendSearchRes(data.organic_results, data.related_questions)
+  appendSearchRes(data.organic_results, data.related_questions);
+};
 
-    }
+function appendSearchRes(data, data1) {
+  if (data) {
+    data.forEach((el) => {
+      // console.log(el.title);
 
-    function appendSearchRes(data, data1){
+      let div = document.createElement("div");
+      div.textContent = el.title;
+      div.style.fontSize = "1vw";
+      div.style.color = "white";
+      div.style.margin = "2%";
+      div.style.textAlign = "center";
+      div.style.fontWeight = "600";
+      div.addEventListener("click", () => {
+        serachPage(el.title);
+      });
 
-      data.forEach((el)=>{
-        // console.log(el.title);
-
-        let div = document.createElement("div");
-        div.textContent = el.title;
-        div.style.fontSize = "1vw"
-        div.style.color = "white";
-        div.style.margin = "2%"
-        div.style.textAlign = "center"
-        div.style.fontWeight = "600"
-        div.addEventListener("click", ()=>{
-
-          serachPage(el.title)
-          
-        })
-
-
-      
       resultBox.append(div);
+    });
+  }
 
+  if (data1) {
+    data1.forEach((el) => {
+      // console.log(el.title);
 
-      })
+      let div = document.createElement("div");
+      div.textContent = el.questions;
+      div.style.fontSize = "1vw";
+      div.style.color = "white";
+      div.style.textAlign = "center";
+      div.style.fontWeight = "600";
+      div.addEventListener("click", () => {
+        serachPage(el.questions);
+      });
 
-       data1.forEach((el)=>{
-        // console.log(el.title);
-
-        let div = document.createElement("div");
-        div.textContent = el.questions;
-        div.style.fontSize = "1vw"
-        div.style.color = "white";
-        div.style.textAlign = "center"
-        div.style.fontWeight = "600"
-        div.addEventListener("click", ()=>{
-          serachPage(el.questions)
-        })
-
-
-      
       resultBox.append(div);
+    });
+  }
+}
 
+function serachPage(data) {
+  // console.log(data);
 
-      })
+  if (localStorage.getItem("searchData") === null) {
+    localStorage.setItem("searchData", JSON.stringify([]));
+  }
 
+  let dataArr = JSON.parse(localStorage.getItem("searchData"));
 
-    }
+  dataArr = [];
 
-    function serachPage(data){
-      // console.log(data);
+  dataArr.push(data);
 
-      if(localStorage.getItem("searchData") === null){
-        localStorage.setItem("searchData", JSON.stringify([]))
-      }
+  localStorage.setItem("searchData", JSON.stringify(dataArr));
 
+  window.location.href = "SearchResults.html";
+}
 
-      let dataArr = JSON.parse(localStorage.getItem("searchData"));
+function setDebouncing(func, delay) {
+  if (timerId) {
+    clearInterval(timerId);
+  }
 
-      dataArr = [];
-
-      dataArr.push(data);
-
-      localStorage.setItem("searchData", JSON.stringify(dataArr));
-
-      window.location.href = "SearchResults.html"
-
-    }
-
-    
-
-    function setDebouncing(func, delay){
-
-      if(timerId){
-        clearInterval(timerId);
-      }
-
-      timerId = setTimeout(()=>{
-        func();
-      },delay)
-
-    }
-
-
-
+  timerId = setTimeout(() => {
+    func();
+  }, delay);
+}
