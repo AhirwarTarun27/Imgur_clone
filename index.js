@@ -14,10 +14,11 @@ var pageNumber = 1;
 
 const loadImages = async () => {
   let res = await fetch(
-    `https://api.unsplash.com/photos/?client_id=W9oXcS9uP1Llfv6F09YQqEmPoK60oUMsro9bSjuA5dM&per_page=15&page=${pageNumber}`
+    `https://api.unsplash.com/photos/?client_id=5-Zn9Ve50ZTGUw5OZYXRwpNl1GlbVDTCVuCm9D_jcfg&per_page=15&page=${pageNumber}`
   );
 
   let data = await res.json();
+  console.log("data:", data);
 
   showImage(data);
 };
