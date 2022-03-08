@@ -21,7 +21,6 @@ body {
   font-weight: 600;
 }
 
-
 .dropdown {
   position: relative;
   display: inline-block;
@@ -141,20 +140,17 @@ body {
   border-radius: 5px 5px 0 0;
 }
 
+#imagesBox > div > div > div:nth-child(2) > div:nth-child(1) {
+  transform: scale(0.7);
 
-#imagesBox>div>div>div:nth-child(2)>div:nth-child(1){
-    transform: scale(.7);
-    
-    color: white;
-    opacity: .4;
-    display: flex;
-    
+  color: white;
+  opacity: 0.4;
+  display: flex;
 }
 
-
-#imagesBox>div>div>div:nth-child(2)>div:nth-child(2):hover{
-   opacity: 1;
-    cursor: pointer;
+#imagesBox > div > div > div:nth-child(2) > div:nth-child(2):hover {
+  opacity: 1;
+  cursor: pointer;
 }
 
 #imagesBox > div > div > div:nth-child(2) > div:nth-child(1):hover {
@@ -162,25 +158,18 @@ body {
   cursor: pointer;
 }
 
-
-
-
-#imagesBox>div>div>div:nth-child(2)>div:nth-child(1)>div{
-    
-    transform: translateY(-5%);
-    color: white;
-    margin: 12% 0 0 12%;
-    
-
+#imagesBox > div > div > div:nth-child(2) > div:nth-child(1) > div {
+  transform: translateY(-5%);
+  color: white;
+  margin: 12% 0 0 12%;
 }
 
+#imagesBox > div > div > div:nth-child(2) > div:nth-child(2) {
+  transform: scale(0.7);
 
-#imagesBox>div>div>div:nth-child(2)>div:nth-child(2){
-    transform: scale(.7);
-    
-    color: white;
-    opacity: .4;
-    display: flex;
+  color: white;
+  opacity: 0.4;
+  display: flex;
 }
 
 #imagesBox > div > div > div:nth-child(2) > div:nth-child(3):hover {
@@ -198,22 +187,19 @@ body {
   transform: scale(0.7);
 }
 
-#imagesBox>div>div>div:nth-child(2)>div:nth-child(2)>div{
-    
-    transform: translateY(-5%);
-    color: white;
-    margin: 12% 0 0 12%;
-    
+#imagesBox > div > div > div:nth-child(2) > div:nth-child(2) > div {
+  transform: translateY(-5%);
+  color: white;
+  margin: 12% 0 0 12%;
 }
 
+#imagesBox > div > div > div:nth-child(2) > div:nth-child(3) {
+  transform: scale(0.7);
 
-#imagesBox>div>div>div:nth-child(2)>div:nth-child(3){
-    transform: scale(.7);
-    
-    color: white;
-    opacity: .4;
-    display: flex;
-    
+  color: white;
+  opacity: 0.4;
+  display: flex;
+
   color: white;
   opacity: 0.4;
   display: flex;
@@ -245,8 +231,6 @@ div {
 
 /* /////////////////////my work//////////////// */
 
-
-
 body {
   background-color: #2e3035;
   font-family: proxima-nova, sans-serif;
@@ -273,7 +257,7 @@ body {
   top: 0;
   box-shadow: 0 0 25px 5px #000;
   z-index: 999;
-  background: url("./images/bg.png") no-repeat;
+  background: url("./images/img1.jpg") no-repeat;
   background-size: cover;
 }
 
@@ -339,25 +323,25 @@ body {
   color: white;
   border-radius: 5px;
   margin-right: -7%;
-    padding-left: 10px;
-    outline: none;
-    border: transparent;
-    transition: all .2s linear;
+  padding-left: 10px;
+  outline: none;
+  border: transparent;
+  transition: all 0.2s linear;
 }
 
-input:focus{
-    opacity: 1;
+input:focus {
+  opacity: 1;
 }
 .navInputBox input::placeholder {
   color: #c2c2c2;
   margin-left: 10px;
-  font-size: .9vw;
+  font-size: 0.9vw;
   font-weight: 500;
   /* padding: 10px; */
 }
 
-.navInputBox i{
-      margin-right: -1.7%;
+.navInputBox i {
+  margin-right: -1.7%;
 }
 
 .fa-solid {
@@ -414,30 +398,29 @@ input:focus{
   margin-top: 9%;
 }
 
-.searchResultDiv{
-    width: 35.8%;
-    max-height: 300px;
-    position: absolute;
-    background-color: rgb(60,66,75);
-    margin: -1% 0 0 31%;
-    border-radius: 8px;
-    transition: linear all .2s;
-    z-index: 5;
-    display: none;
-    z-index: 999;
-    /* display: block; */
-    overflow: scroll;
+.searchResultDiv {
+  width: 35.8%;
+  max-height: 300px;
+  position: absolute;
+  background-color: rgb(60, 66, 75);
+  margin: -1% 0 0 31%;
+  border-radius: 8px;
+  transition: linear all 0.2s;
+  z-index: 5;
+  display: none;
+  z-index: 999;
+  /* display: block; */
+  overflow: scroll;
 }
 
-.searchResultDiv>div{
+.searchResultDiv > div {
   padding: 1.5%;
   height: 20px;
 }
 
-.searchResultDiv>div:hover{
+.searchResultDiv > div:hover {
   cursor: pointer;
-  background-color: rgb(103,107,112);
-
+  background-color: rgb(103, 107, 112);
 }
 
 ::-webkit-scrollbar {
